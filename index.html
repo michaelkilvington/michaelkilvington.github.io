@@ -1,7 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Autistic?</title>
+    <style>
+        #message {
+            display: none;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <button id="myButton" onclick="replaceButton()">Am I Autistic?</button>
+    <p id="message">YES</p>
+
+    <script>
+        function replaceButton() {
+            document.getElementById('myButton').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
